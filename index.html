@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Recuerdos...</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="bienvenida">
+        <header>
+            <h1>Bienvenida a Nuestros Recuerdos</h1>
+            <p>Un pequeño viaje a través de momentos especiales, para ti, mi Lunita.</p>
+            <button onclick="iniciar()">¿Vamos?</button>
+        </header>
+    </div>
+    
+    <div id="contenido" style="display:none;">
+        <section id="galeria">
+            <h2>Quiero decirte que...</h2>
+            
+            <div class="galeria-seccion">
+                <div class="galeria-container">        
+                    <img src="img/img1.jpg" alt="Foto 1">
+                    <img src="img/img2.JPG" alt="Foto 2">
+                </div>
+                <p class="descripcion">Cuando vi a esta niña inocente solo podía pensar en que quería que esos ojitos brillantes me miraran a mi.</p>
+                <button onclick="mostrarSeccion('galeria2')">Siguiente</button>
+            </div>
+            
+            <div class="galeria-seccion" id="galeria2" style="display:none;">
+                <div class="galeria-container">
+                    <img src="img/img3.jpeg" alt="Foto 3">
+                    <img src="img/img4.jpeg" alt="Foto 4">
+                    <img src="img/img5.jpeg" alt="Foto 5">
+                    <img src="img/img6.jpeg" alt="Foto 6">
+                    <img src="img/img6_1.JPG" alt="Foto 7">
+                    <img src="img/img7.jpeg" alt="Foto 8">
+                    <img src="img/img8.jpeg" alt="Foto 9">
+                    <img src="img/img9.jpeg" alt="Foto 10">
+                    <img src="img/img10.jpeg" alt="Foto 11">
+                    <img src="img/img11.jpeg" alt="Foto 12">
+                    <img src="img/img12.jpeg" alt="Foto 13">
+                    <img src="img/img13.PNG" alt="Foto 14">
+                </div>
+                <p class="descripcion">Poco a poco empezamos a construir una relación, no era nuestro objetivo, 
+                    pero fue lo que la vida nos y el corazón nos indicaron. 
+                    Conocer lugares, disfrutar atardeceres, tomarte fotos desprevenida, posar para un vigilante "fotógrafo"...</p>
+                <button onclick="mostrarSeccion('galeria3')">Siguiente</button>
+            </div>
+
+            <div class="galeria-seccion" id="galeria3" style="display:none;">
+                <div class="galeria-container">
+                    <img src="img/img14.JPG" alt="Foto 15">
+                    <img src="img/img15.JPG" alt="Foto 16">
+                    <img src="img/img16.jpeg" alt="Foto 17">
+                    <img src="img/img17.jpeg" alt="Foto 18">
+                    <img src="img/img18.jpeg" alt="Foto 19">
+                    <img src="img/img19.jpeg" alt="Foto 20">
+                    <img src="img/dibujo.JPG" alt="Foto 21">
+                </div>
+                <p class="descripcion">
+                    Así fue que empezamos a conectar, un conjunto de emociones, detalles, momentos y nuestras ocurrencias fueron marcando el camino.
+                </p>
+                <button onclick="mostrarSeccion('galeria4')">Siguiente</button>
+            </div>
+
+            <div class="galeria-seccion" id="galeria4" style="display:none;">
+                <div class="galeria-container">
+                    <img src="img/img20.jpeg" alt="Foto 22">
+                    <img src="img/img21.jpeg" alt="Foto 23">
+                    <img src="img/img22.jpeg" alt="Foto 24">
+                    <img src="img/img23.jpeg" alt="Foto 25">
+                    <img src="img/img24.jpeg" alt="Foto 26">
+                    <img src="img/img24_1.jpeg" alt="Foto 27">
+                    <img src="img/img26.jpeg" alt="Foto 28">
+                </div>
+                <p class="descripcion">
+                    Un camino lleno de felicidad, respeto, amor, pasión, lágrimas, tristezas... todo en absoluto.
+                    Estuviste en cada momento, me hiciste muy feliz y así es como se puede ver en cada foto, juntos somos sonrisas, muecas, gestos, risas y muchísimo amor.
+                </p>
+                <button onclick="mostrarSeccion('galeria5')">Siguiente</button>
+            </div>
+
+            <div class="galeria-seccion" id="galeria5" style="display:none;">
+                <div class="galeria-container">
+                    <img src="img/img27.jpg" alt="Foto 29">
+                    <img src="img/img28.jpg" alt="Foto 30">
+                    <img src="img/img29.jpeg" alt="Foto 31">
+                    <img src="img/img30.jpg" alt="Foto 32">
+                    <img src="img/img31.jpeg" alt="Foto 33">
+                    <img src="img/img32.jpeg" alt="Foto 34">
+                    <img src="img/img33.jpeg" alt="Foto 35">
+                    <img src="img/img34.jpeg" alt="Foto 36">
+                    <img src="img/img35.jpeg" alt="Foto 37">
+                    <img src="img/img36.jpeg" alt="Foto 38">
+                    <img src="img/img37.jpeg" alt="Foto 39">
+                    <img src="img/img38.jpeg" alt="Foto 40">
+                </div>
+                <p class="descripcion">
+                    Y, por supuesto, lo mínimo que mi princesa merecía era ser tratada como una reina. 
+                    Te di tu anillo de compromiso (jejeje), pediste tu deseo y compartimos nuestros deseos como pareja. 
+                    Celebramos juntos otro año más de tu vida y nuestro primer aniversario juntos...
+                </p>
+                <button onclick="mostrarSeccion('galeria6')">Siguiente</button>
+            </div>
+
+            <div class="galeria-seccion" id="galeria6" style="display:none;">
+                <div class="galeria-container">
+                    <img src="img/img42.JPG" alt="Foto 41">
+                    <img src="img/img43.jpeg" alt="Foto 42">
+                    <img src="img/img44.jpeg" alt="Foto 43">
+                    <img src="img/img45.JPG" alt="Foto 44">
+                    <img src="img/img41.jpeg" alt="Foto 45">
+                    <img src="img/img39.jpeg" alt="Foto 46">
+                    <img src="img/img40.jpeg" alt="Foto 47">
+                </div>
+                <p class="descripcion">
+                    Seguimos acumulando momentos, cumpliendo objetivos juntos y retándonos a vivir experiencias nuevas,
+                    que aunque me moría del susto, siempre tuve tu mano y tu calor para mantenerme fuerte.
+                    En cada momento te vi feliz, te vi empoderada, radiante y hermosa! 
+                    Tuviste miedo, pero eres tan pero tan fuerte.
+                    Te he admirado en cada instante, en cada faceta...
+                </p>
+                <button onclick="mostrarSeccion('galeria7')">Siguiente</button>
+            </div>
+
+            <div class="galeria-seccion" id="galeria7" style="display:none;">
+                <video class="video-responsive" controls>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                </video>
+                
+                <h1 class="descripcion">
+                    Y esto fue solo un pequeño y superficial recorrido de nuestras memorias.
+                    Creo que si conseguí que esos ojitos brillantes de esa princesita me vieran solo a mi, y me transmitieran por igual todo este amor que yo desbordo por ti...
+                </h1>
+                <h1 class="descripcion">
+                    Quiero que mi vida sea a tu lado, quiero que seas tu mi esposa, mi compañera de vida, el equipo que conquistará y alcanzará todos sus objetivos.
+                    Quiero que seas tú, mi Lunita.
+                </h>
+                <h1 class="descripcion">
+                    Te amo.
+                </h1>
+
+            </div>
+            <!-- Añade más secciones según sea necesario -->
+            
+        </section>
+    </div>
+        
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        function iniciar() {
+            document.getElementById('bienvenida').style.display = 'none';
+            document.getElementById('contenido').style.display = 'block';
+        }
+
+        function mostrarSeccion(id) {
+            document.getElementById(id).style.display = 'block';
+            // Scroll hacia la nueva sección
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
