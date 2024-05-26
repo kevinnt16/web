@@ -11,6 +11,7 @@
         <header>
             <h1>Bienvenida a Nuestros Recuerdos</h1>
             <p>Un pequeño viaje a través de momentos especiales, para ti, mi Lunita.</p>
+            <p>Sube un poco el volumen.</p>
             <button onclick="iniciar()">¿Vamos?</button>
         </header>
     </div>
@@ -143,7 +144,6 @@
                 </h1>
 
             </div>
-            <!-- Añade más secciones según sea necesario -->
             
         </section>
     </div>
@@ -154,13 +154,15 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
         function iniciar() {
-            document.getElementById('bienvenida').style.display = 'none';
-            document.getElementById('contenido').style.display = 'block';
-        }
+        document.getElementById('bienvenida').style.display = 'none';
+        document.getElementById('contenido').style.display = 'block';
+        
+        var audio = document.getElementById('background-music');
+        audio.play();
+    }
 
         function mostrarSeccion(id) {
             document.getElementById(id).style.display = 'block';
-            // Scroll hacia la nueva sección
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
         }
 
