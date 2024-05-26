@@ -147,6 +147,9 @@
             
         </section>
     </div>
+
+    <audio id="background-music" src="audio/music.mp3" autoplay loop>
+    </audio>    
         
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
@@ -160,6 +163,11 @@
             // Scroll hacia la nueva sección
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('background-music');
+            audio.volume = 0.5; // Ajusta el volumen de 0.0 a 1.0
+        });
     </script>
 </body>
 </html>
