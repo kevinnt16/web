@@ -169,7 +169,7 @@
                 <h1 class="descripcion">
                     Quiero que mi vida sea a tu lado, quiero que seas tu mi esposa, mi compañera de vida, el equipo que conquistará y alcanzará todos sus objetivos.
                     Quiero que seas tú, mi Lunita.
-                </h>
+                </h1>
                 <h1 class="descripcion">
                     Te amo.
                 </h1>
@@ -180,41 +180,6 @@
     <audio id="background-music" src="audio/music.mp3" autoplay loop></audio>    
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        // scripts.js content here
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var audio = document.getElementById('background-music');
-            audio.volume = 0.5; // Ajusta el volumen de 0.0 a 1.0
-
-            var swipers = document.querySelectorAll('.swiper-container');
-            swipers.forEach(function(swiperContainer) {
-                new Swiper(swiperContainer, {
-                    loop: true,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
-            });
-        });
-
-        function iniciar() {
-            document.getElementById('bienvenida').style.display = 'none';
-            document.getElementById('contenido').style.display = 'block';
-            
-            var audio = document.getElementById('background-music');
-            audio.play();
-        }
-
-        function mostrarSeccion(id) {
-            document.getElementById(id).style.display = 'block';
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>

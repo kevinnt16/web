@@ -4,8 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var swipers = document.querySelectorAll('.swiper-container');
     swipers.forEach(function(swiperContainer) {
+        var slides = swiperContainer.querySelectorAll('.swiper-slide');
+        var loopMode = slides.length >= 3; // Activa el modo de bucle solo si hay al menos 3 diapositivas
+
         new Swiper(swiperContainer, {
-            loop: true,
+            loop: loopMode,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
