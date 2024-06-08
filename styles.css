@@ -1,4 +1,5 @@
 /* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -76,7 +77,6 @@ footer {
     height: 400px; /* Altura fija para uniformidad */
 }
 
-
 .video-responsive {
     width: 80%; /* Ajusta el ancho al 100% del contenedor */
     max-width: 300px; /* Ancho máximo de 500px */
@@ -86,6 +86,40 @@ footer {
 .descripcion {
     font-size: 1.1rem;
     color: #ccc; /* Color del texto de la descripción */
+}
+
+/* Estilos de Swiper */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
 }
 
 /* Media Queries para Responsividad */

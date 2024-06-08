@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Recuerdos...</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <div id="bienvenida">
@@ -21,28 +22,38 @@
             <h2>Quiero decirte que...</h2>
             
             <div class="galeria-seccion">
-                <div class="galeria-container">        
-                    <img src="img/img1.jpg" alt="Foto 1">
-                    <img src="img/img2.JPG" alt="Foto 2">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img1.jpg" alt="Foto 1"></div>
+                        <div class="swiper-slide"><img src="img/img2.JPG" alt="Foto 2"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <p class="descripcion">Cuando vi a esta niña inocente solo podía pensar en que quería que esos ojitos brillantes me miraran a mi.</p>
                 <button onclick="mostrarSeccion('galeria2')">Siguiente</button>
             </div>
             
             <div class="galeria-seccion" id="galeria2" style="display:none;">
-                <div class="galeria-container">
-                    <img src="img/img3.jpeg" alt="Foto 3">
-                    <img src="img/img4.jpeg" alt="Foto 4">
-                    <img src="img/img5.jpeg" alt="Foto 5">
-                    <img src="img/img6.jpeg" alt="Foto 6">
-                    <img src="img/img6_1.JPG" alt="Foto 7">
-                    <img src="img/img7.jpeg" alt="Foto 8">
-                    <img src="img/img8.jpeg" alt="Foto 9">
-                    <img src="img/img9.jpeg" alt="Foto 10">
-                    <img src="img/img10.jpeg" alt="Foto 11">
-                    <img src="img/img11.jpeg" alt="Foto 12">
-                    <img src="img/img12.jpeg" alt="Foto 13">
-                    <img src="img/img13.PNG" alt="Foto 14">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img3.jpeg" alt="Foto 3"></div>
+                        <div class="swiper-slide"><img src="img/img4.jpeg" alt="Foto 4"></div>
+                        <div class="swiper-slide"><img src="img/img5.jpeg" alt="Foto 5"></div>
+                        <div class="swiper-slide"><img src="img/img6.jpeg" alt="Foto 6"></div>
+                        <div class="swiper-slide"><img src="img/img6_1.JPG" alt="Foto 7"></div>
+                        <div class="swiper-slide"><img src="img/img7.jpeg" alt="Foto 8"></div>
+                        <div class="swiper-slide"><img src="img/img8.jpeg" alt="Foto 9"></div>
+                        <div class="swiper-slide"><img src="img/img9.jpeg" alt="Foto 10"></div>
+                        <div class="swiper-slide"><img src="img/img10.jpeg" alt="Foto 11"></div>
+                        <div class="swiper-slide"><img src="img/img11.jpeg" alt="Foto 12"></div>
+                        <div class="swiper-slide"><img src="img/img12.jpeg" alt="Foto 13"></div>
+                        <div class="swiper-slide"><img src="img/img13.PNG" alt="Foto 14"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <p class="descripcion">Poco a poco empezamos a construir una relación, no era nuestro objetivo, 
                     pero fue lo que la vida nos y el corazón nos indicaron. 
@@ -51,14 +62,19 @@
             </div>
 
             <div class="galeria-seccion" id="galeria3" style="display:none;">
-                <div class="galeria-container">
-                    <img src="img/img14.JPG" alt="Foto 15">
-                    <img src="img/img15.JPG" alt="Foto 16">
-                    <img src="img/img16.jpeg" alt="Foto 17">
-                    <img src="img/img17.jpeg" alt="Foto 18">
-                    <img src="img/img18.jpeg" alt="Foto 19">
-                    <img src="img/img19.jpeg" alt="Foto 20">
-                    <img src="img/dibujo.JPG" alt="Foto 21">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img14.JPG" alt="Foto 15"></div>
+                        <div class="swiper-slide"><img src="img/img15.JPG" alt="Foto 16"></div>
+                        <div class="swiper-slide"><img src="img/img16.jpeg" alt="Foto 17"></div>
+                        <div class="swiper-slide"><img src="img/img17.jpeg" alt="Foto 18"></div>
+                        <div class="swiper-slide"><img src="img/img18.jpeg" alt="Foto 19"></div>
+                        <div class="swiper-slide"><img src="img/img19.jpeg" alt="Foto 20"></div>
+                        <div class="swiper-slide"><img src="img/dibujo.JPG" alt="Foto 21"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <p class="descripcion">
                     Así fue que empezamos a conectar, un conjunto de emociones, detalles, momentos y nuestras ocurrencias fueron marcando el camino.
@@ -67,14 +83,19 @@
             </div>
 
             <div class="galeria-seccion" id="galeria4" style="display:none;">
-                <div class="galeria-container">
-                    <img src="img/img20.jpeg" alt="Foto 22">
-                    <img src="img/img21.jpeg" alt="Foto 23">
-                    <img src="img/img22.jpeg" alt="Foto 24">
-                    <img src="img/img23.jpeg" alt="Foto 25">
-                    <img src="img/img24.jpeg" alt="Foto 26">
-                    <img src="img/img24_1.jpeg" alt="Foto 27">
-                    <img src="img/img26.jpeg" alt="Foto 28">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img20.jpeg" alt="Foto 22"></div>
+                        <div class="swiper-slide"><img src="img/img21.jpeg" alt="Foto 23"></div>
+                        <div class="swiper-slide"><img src="img/img22.jpeg" alt="Foto 24"></div>
+                        <div class="swiper-slide"><img src="img/img23.jpeg" alt="Foto 25"></div>
+                        <div class="swiper-slide"><img src="img/img24.jpeg" alt="Foto 26"></div>
+                        <div class="swiper-slide"><img src="img/img24_1.jpeg" alt="Foto 27"></div>
+                        <div class="swiper-slide"><img src="img/img26.jpeg" alt="Foto 28"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <p class="descripcion">
                     Un camino lleno de felicidad, respeto, amor, pasión, lágrimas, tristezas... todo en absoluto.
@@ -84,19 +105,24 @@
             </div>
 
             <div class="galeria-seccion" id="galeria5" style="display:none;">
-                <div class="galeria-container">
-                    <img src="img/img27.jpg" alt="Foto 29">
-                    <img src="img/img28.jpg" alt="Foto 30">
-                    <img src="img/img29.jpeg" alt="Foto 31">
-                    <img src="img/img30.jpg" alt="Foto 32">
-                    <img src="img/img31.jpeg" alt="Foto 33">
-                    <img src="img/img32.jpeg" alt="Foto 34">
-                    <img src="img/img33.jpeg" alt="Foto 35">
-                    <img src="img/img34.jpeg" alt="Foto 36">
-                    <img src="img/img35.jpeg" alt="Foto 37">
-                    <img src="img/img36.jpeg" alt="Foto 38">
-                    <img src="img/img37.jpeg" alt="Foto 39">
-                    <img src="img/img38.jpeg" alt="Foto 40">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img27.jpg" alt="Foto 29"></div>
+                        <div class="swiper-slide"><img src="img/img28.jpg" alt="Foto 30"></div>
+                        <div class="swiper-slide"><img src="img/img29.jpeg" alt="Foto 31"></div>
+                        <div class="swiper-slide"><img src="img/img30.jpg" alt="Foto 32"></div>
+                        <div class="swiper-slide"><img src="img/img31.jpeg" alt="Foto 33"></div>
+                        <div class="swiper-slide"><img src="img/img32.jpeg" alt="Foto 34"></div>
+                        <div class="swiper-slide"><img src="img/img33.jpeg" alt="Foto 35"></div>
+                        <div class="swiper-slide"><img src="img/img34.jpeg" alt="Foto 36"></div>
+                        <div class="swiper-slide"><img src="img/img35.jpeg" alt="Foto 37"></div>
+                        <div class="swiper-slide"><img src="img/img36.jpeg" alt="Foto 38"></div>
+                        <div class="swiper-slide"><img src="img/img37.jpeg" alt="Foto 39"></div>
+                        <div class="swiper-slide"><img src="img/img38.jpeg" alt="Foto 40"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <p class="descripcion">
                     Y, por supuesto, lo mínimo que mi princesa merecía era ser tratada como una reina. 
@@ -107,14 +133,19 @@
             </div>
 
             <div class="galeria-seccion" id="galeria6" style="display:none;">
-                <div class="galeria-container">
-                    <img src="img/img42.JPG" alt="Foto 41">
-                    <img src="img/img43.jpeg" alt="Foto 42">
-                    <img src="img/img44.jpeg" alt="Foto 43">
-                    <img src="img/img45.JPG" alt="Foto 44">
-                    <img src="img/img41.jpeg" alt="Foto 45">
-                    <img src="img/img39.jpeg" alt="Foto 46">
-                    <img src="img/img40.jpeg" alt="Foto 47">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img42.JPG" alt="Foto 41"></div>
+                        <div class="swiper-slide"><img src="img/img43.jpeg" alt="Foto 42"></div>
+                        <div class="swiper-slide"><img src="img/img44.jpeg" alt="Foto 43"></div>
+                        <div class="swiper-slide"><img src="img/img45.JPG" alt="Foto 44"></div>
+                        <div class="swiper-slide"><img src="img/img41.jpeg" alt="Foto 45"></div>
+                        <div class="swiper-slide"><img src="img/img39.jpeg" alt="Foto 46"></div>
+                        <div class="swiper-slide"><img src="img/img40.jpeg" alt="Foto 47"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <p class="descripcion">
                     Seguimos acumulando momentos, cumpliendo objetivos juntos y retándonos a vivir experiencias nuevas,
@@ -142,34 +173,13 @@
                 <h1 class="descripcion">
                     Te amo.
                 </h1>
-
             </div>
-            
         </section>
     </div>
 
-    <audio id="background-music" src="audio/music.mp3" autoplay loop>
-    </audio>    
-        
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        function iniciar() {
-        document.getElementById('bienvenida').style.display = 'none';
-        document.getElementById('contenido').style.display = 'block';
-        
-        var audio = document.getElementById('background-music');
-        audio.play();
-    }
+    <audio id="background-music" src="audio/music.mp3" autoplay loop></audio>    
 
-        function mostrarSeccion(id) {
-            document.getElementById(id).style.display = 'block';
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var audio = document.getElementById('background-music');
-            audio.volume = 0.5; // Ajusta el volumen de 0.0 a 1.0
-        });
-    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
