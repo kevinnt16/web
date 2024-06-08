@@ -61,20 +61,25 @@ footer {
     margin-bottom: 2rem;
 }
 
-.galeria-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1rem;
+.swiper-container {
+    width: 100%;
+    height: auto; /* Ajuste de altura automática */
 }
 
-.galeria-container img, .galeria-container video {
-    flex: 1 1 calc(25% - 1rem); /* Ajuste de tamaño flexible */
-    max-width: calc(25% - 1rem); /* Asegura que no se estiren demasiado */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-width: 300px; /* Tamaño máximo de las imágenes */
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
-    object-fit: cover; /* Asegura que las imágenes y videos mantengan su proporción */
-    height: 400px; /* Altura fija para uniformidad */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .video-responsive {
@@ -89,31 +94,6 @@ footer {
 }
 
 /* Estilos de Swiper */
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
 .swiper-button-next, .swiper-button-prev {
     color: #fff;
 }
@@ -124,15 +104,13 @@ footer {
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
-    .galeria-container img, .galeria-container video {
-        flex: 1 1 calc(50% - 1rem); /* Dos elementos por fila en pantallas medianas */
-        max-width: calc(50% - 1rem);
+    .swiper-slide img {
+        max-width: 200px; /* Ajuste para pantallas medianas */
     }
 }
 
 @media (max-width: 480px) {
-    .galeria-container img, .galeria-container video {
-        flex: 1 1 calc(100% - 1rem); /* Un elemento por fila en pantallas pequeñas */
-        max-width: calc(100% - 1rem);
+    .swiper-slide img {
+        max-width: 150px; /* Ajuste para pantallas pequeñas */
     }
 }
