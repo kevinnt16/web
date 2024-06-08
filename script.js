@@ -1,5 +1,3 @@
-// scripts.js
-
 document.addEventListener('DOMContentLoaded', function() {
     var audio = document.getElementById('background-music');
     audio.volume = 0.5; // Ajusta el volumen de 0.0 a 1.0
