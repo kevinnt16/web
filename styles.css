@@ -1,5 +1,4 @@
 /* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -61,26 +60,22 @@ footer {
     margin-bottom: 2rem;
 }
 
-.swiper-container {
-    width: 100%;
-    height: auto; /* Ajuste de altura automática */
-}
-
-.swiper-slide {
+.galeria-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #fff;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.swiper-slide img {
-    width: 100%;
-    max-width: 300px; /* Tamaño máximo de las imágenes */
-    height: auto;
+.galeria-container img, .galeria-container video {
+    flex: 1 1 calc(25% - 1rem); /* Ajuste de tamaño flexible */
+    max-width: calc(25% - 1rem); /* Asegura que no se estiren demasiado */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
+    object-fit: cover; /* Asegura que las imágenes y videos mantengan su proporción */
+    height: 400px; /* Altura fija para uniformidad */
 }
+
 
 .video-responsive {
     width: 80%; /* Ajusta el ancho al 100% del contenedor */
@@ -93,24 +88,18 @@ footer {
     color: #ccc; /* Color del texto de la descripción */
 }
 
-/* Estilos de Swiper */
-.swiper-button-next, .swiper-button-prev {
-    color: #fff;
-}
-
-.swiper-pagination-bullet-active {
-    background: #fff;
-}
-
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
-    .swiper-slide img {
-        max-width: 200px; /* Ajuste para pantallas medianas */
+    .galeria-container img, .galeria-container video {
+        flex: 1 1 calc(50% - 1rem); /* Dos elementos por fila en pantallas medianas */
+        max-width: calc(50% - 1rem);
     }
 }
 
 @media (max-width: 480px) {
-    .swiper-slide img {
-        max-width: 150px; /* Ajuste para pantallas pequeñas */
+    .galeria-container img, .galeria-container video {
+        flex: 1 1 calc(100% - 1rem); /* Un elemento por fila en pantallas pequeñas */
+        max-width: calc(100% - 1rem);
     }
 }
+
